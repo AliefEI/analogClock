@@ -1,0 +1,129 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************%
+/* LAYOUT
+/*******************************************/
+html{
+  align-items: center;
+}
+
+body{
+  align-items: center;
+  background-image: url(https://unsplash.it/1500/1000?image=881&blur=5);
+}
+
+.clock{
+  width: 700px;
+  height: 700px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+}
+
+.clockFace{
+  height: 750px;
+  width: 750px;
+  border-radius: 750px;
+  border: white .75rem solid;
+  position: absolute;
+}
+
+.hand{
+  border: white 3px solid;
+  width: 50%;
+  top: 50%;
+  position: absolute;
+  transform-origin: 100%;
+  transition: all .5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: rotate(90deg);
+}
+
+.secondHand{
+  color: white;
+  /* transform: rotate(deg); */
+}
+
+.minuteHand{
+  color: white;
+  /* transform-origin: 100%; */
+}
+
+.hourHand{
+  color: white;
+  /* transform: rotate(90deg); */
+}
+
+/* .number{
+  width: 50%;
+  top: 50%;
+  position: absolute;
+  transform-origin: 100%;
+  color: black;
+  padding-left: 50px;
+  font-size: 30px;
+  /* transform: rotate(90deg);
+} */
+
+.numOne{  
+  transform: rotate(120deg);
+}
+
+.numTwo{
+  transform: rotate(150deg) 
+}
+
+.numThree{
+  transform: rotate(180deg);
+}
+
+.numFour{
+  transform: rotate(210deg);
+}
+
+.numFive{
+  transform: rotate(240deg);
+}
+
+.numSix{
+  transform: rotate(270deg);
+}
+
+.numSeven{
+  transform: rotate(300deg);
+}
+
+.numEight{
+  transform: rotate(330deg);
+}
+
+.numNine{
+  transform: rotate(360deg);
+}
+
+.numTen{
+  transform: rotate(30deg);
+}
+
+.numEleven{
+  transform: rotate(60deg);
+}
+
+.numTwelf{
+  transform: rotate(90deg);
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
